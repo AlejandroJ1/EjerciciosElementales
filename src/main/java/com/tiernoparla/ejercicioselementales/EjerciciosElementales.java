@@ -4,12 +4,87 @@ import java.util.Scanner;
 import java.lang.Math;
 public class EjerciciosElementales {
     public static void main(String[] args) {
-    String password = "contraseña123"
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /* //Calcular digitos de un numero mediante un while
+        int Numeros = 12345678;
+        int Cantidad = 0;
+        int div = Numeros;
+        while (div>0){
+            Cantidad++;
+            div = div/10;
+            
+        }
+        System.out.println(Numeros + " tiene " + Cantidad + " digitos");
+        */
+        
+        
+        
+        
+        /*   //Calcular digitos de un número mediante una String
+        int Numeros = 12345678;
+        String x = Integer.toString(Numeros);
+        
+        System.out.println(Numeros + " tiene " + x.length() + " digitos");
+        */
+        
+                
+        
+        
+    
+        
+    
+            
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//calcular el area de un triangulo
+            /*
+        double area_triangulo = 0;
+        double base = 20;
+        System.out.println("La base del trinagulo es:" + base);
+        double h = 16;
+        System.out.println("La altura del triangulo es:" + h);
+        double area_triangulo1 = ((base*h)/2);
+        System.out.println("El area del trinagulo es:" + area_triangulo1);
     }
+}  
+        */
         
-        
-        
-        
+               
             /*
             int año=2024;
             if(año%4 !=0){
@@ -496,4 +571,6 @@ public class EjerciciosElementales {
     
         }
 */
+    }//public static
+}//public class
        
