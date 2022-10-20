@@ -4,8 +4,10 @@ import java.util.Scanner;
 import java.lang.Math;
 import java.util.Arrays;
 import java.util.regex.*;
+import javax.swing.JOptionPane;
 
 public class EjerciciosElementales {
+  
 
     public static boolean isPrimo(int p) {
         //boolean is_prime = true
@@ -15,8 +17,89 @@ public class EjerciciosElementales {
         }
         return true;
     }
+    //metodo para saner si es par o impar
+    public static boolean isPar(int numero){
+    if(numero % 2 == 0){
+    return true;
+    }else{
+        return false;
+    }
+    }
 
     public static void main(String[] args) {
+      
+        
+        /* //Decir si un numero es par o impar con un metodo
+        if (isPar(346)){
+            System.out.println("Es par");
+        }else{
+            System.out.println("Es impar");
+        }
+        */
+       
+        
+        /* //Numero par o impar con Scanner
+        Scanner parScanner = new Scanner (System.in);
+                
+        int numero;
+        
+        numero = parScanner.nextInt();
+        
+        if(numero % 2 == 0){
+            System.out.println("El número es par");
+        }else{
+            System.out.println("El número es impar");
+           
+            
+        }
+        */
+        
+        /*//factorizar un numero
+
+        Scanner miScanner = new Scanner(System.in);
+       int numero;
+       int divisor = 2;
+       
+        numero = miScanner.nextInt();
+       
+        System.out.println("Los factores del número " + numero + " son ");
+        while(numero != 1){
+        if(numero % divisor == 0){
+            System.out.println(divisor + " ");
+            numero = numero / divisor;
+        }else{
+            divisor++;
+        }
+        }
+    */
+    
+       
+        /*//Dime el número del medio del número que te doy
+        String str = "12345";
+        System.out.println("Nº digitos " + str.length());
+        int l= str.length();
+        int i = l/2;
+        System.out.println("El número del medio es: " + str.charAt(i));
+
+        */
+
+        
+        
+        /* //Decir si los numeros son consecutivos mediante un JOptionPane
+        String a = JOptionPane.showInputDialog(null, "Primer Número");
+        String b = JOptionPane.showInputDialog(null, "Segundo Número");
+        int n1 = Integer.parseInt(a);
+        int n2 = Integer.parseInt(b);
+
+        int consecutivos = n1 - n2;
+        if (consecutivos == 1 || consecutivos == -1) {
+            JOptionPane.showConfirmDialog(null, "Los números son consecutivos");
+        } else {
+            JOptionPane.showConfirmDialog(null, "Los números no son consecutivos");
+        }
+        */
+        
+        /*
 
         final int p = 23;
         System.out.println(isPrimo(p));
@@ -45,7 +128,7 @@ public class EjerciciosElementales {
             }
 
         }
-
+*/
         /*
         //Número primo
         final int P = 22;
@@ -74,7 +157,7 @@ public class EjerciciosElementales {
         return true;
     }
          */
-    }
+    
     /*
         //Números primos gemelos
         int n;
