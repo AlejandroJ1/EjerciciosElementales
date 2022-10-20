@@ -1,21 +1,278 @@
-
 package com.tiernoparla.ejercicioselementales;
+
 import java.util.Scanner;
 import java.lang.Math;
+import java.util.Arrays;
+import java.util.regex.*;
+import javax.swing.JOptionPane;
+
 public class EjerciciosElementales {
+  
+
+    public static boolean isPrimo(int p) {
+        //boolean is_prime = true
+        for (int i = 2; i < p; i++) {
+            if (p % i == 0) {
+            }
+        }
+        return true;
+    }
+    //metodo para saner si es par o impar
+    public static boolean isPar(int numero){
+    if(numero % 2 == 0){
+    return true;
+    }else{
+        return false;
+    }
+    }
+
     public static void main(String[] args) {
+      
+        
+        /* //Decir si un numero es par o impar con un metodo
+        if (isPar(346)){
+            System.out.println("Es par");
+        }else{
+            System.out.println("Es impar");
+        }
+        */
+       
+        
+        /* //Numero par o impar con Scanner
+        Scanner parScanner = new Scanner (System.in);
+                
+        int numero;
+        
+        numero = parScanner.nextInt();
+        
+        if(numero % 2 == 0){
+            System.out.println("El número es par");
+        }else{
+            System.out.println("El número es impar");
+           
+            
+        }
+        */
+        
+        /*//factorizar un numero
+
+        Scanner miScanner = new Scanner(System.in);
+       int numero;
+       int divisor = 2;
+       
+        numero = miScanner.nextInt();
+       
+        System.out.println("Los factores del número " + numero + " son ");
+        while(numero != 1){
+        if(numero % divisor == 0){
+            System.out.println(divisor + " ");
+            numero = numero / divisor;
+        }else{
+            divisor++;
+        }
+        }
+    */
+    
+       
+        /*//Dime el número del medio del número que te doy
+        String str = "12345";
+        System.out.println("Nº digitos " + str.length());
+        int l= str.length();
+        int i = l/2;
+        System.out.println("El número del medio es: " + str.charAt(i));
+
+        */
+
         
         
+        /* //Decir si los numeros son consecutivos mediante un JOptionPane
+        String a = JOptionPane.showInputDialog(null, "Primer Número");
+        String b = JOptionPane.showInputDialog(null, "Segundo Número");
+        int n1 = Integer.parseInt(a);
+        int n2 = Integer.parseInt(b);
+
+        int consecutivos = n1 - n2;
+        if (consecutivos == 1 || consecutivos == -1) {
+            JOptionPane.showConfirmDialog(null, "Los números son consecutivos");
+        } else {
+            JOptionPane.showConfirmDialog(null, "Los números no son consecutivos");
+        }
+        */
         
+        /*
+
+        final int p = 23;
+        System.out.println(isPrimo(p));
+
+        final int N = 100;
+
+        for (int i = 2; i < N; i++) {
+            boolean isPrimo = true;
+            for (int j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    isPrimo = false;
+                    break;
+                }
+            }
+
+            boolean isPrimo2 = true;
+            for (int j = 2; j < (i + 2); j++) {
+                if ((i + 2) % j == 0) {
+                    isPrimo2 = false;
+                    break;
+                }
+            }
+
+            if (isPrimo(i) && isPrimo2) {
+                System.out.println(i + " " + (i + 2));
+            }
+
+        }
+*/
+        /*
+        //Número primo
+        final int P = 22;
+        boolean is_prime = true;
         
+        for(int i = 2; i < P; i++){
+            if( P % i == 0){is_prime = false;}
+        }
+        String res = (is_prime) ?"Si es primo" : "No es primo";
+        System.out.println(res);
+         */
+ /*
+    public static boolean sonGemelos(long a, long b){
+    {
+        return esPrimo(a) && esPrimo(b) && Math.abs(a - b) == 2;
+    }
+    
+    {
+        if ( numero <= 1 ) return false;
+ 
+        long max = (long) Math.sqrt(numero);
+        for ( long i = 2; i < max / 2; ++i )
+            if ( numero % i == 0 )
+                return false;
+ 
+        return true;
+    }
+         */
+    
+    /*
+        //Números primos gemelos
+        int n;
+        boolean prime[] = new boolean[n + 1];
+        for(int i = 0; i <= n ; i++)
+            prime[i] = true ;
+            for(int p = 2; p * p <= n; p++){
+                if(prime[p] == true){
+                    for(int i = p * 2; i <= n; i+= p)
+                        prime[i] = false;
+                }
+        }
+              if (prime[i] == true &&
+                prime[i + 2] == true)
+             
+                // Display the result
+                System.out.print(" (" + i + ", " +
+                                   (i + 2) + ")");
+        }
+    }
+     */
+
+ /*
+        //Dar la vuelta a una String con reverse
+        String str = "Delfstuck";
+        System.out.println(str);
+        StringBuilder strb = new StringBuilder(str);
+        str = strb.reverse().toString();
+		System.out.println(str);
+     */
+
+ /*
+        //String[] str_arr = ("a","b","c","aasd");
+        //System.out.println(str_arr[2]);
+        String[][] str_matrix =  {"23524", "wwf"}, {"erge35t3","fwg2g2g","sdgsgwg"},{"   c"}, new String[4]};
+        String[][] asfasd = new String [5][6];
+        System.out.println(str_matrix[2][2]);
+    
+    
+    int N = 5;
+    int[][] matrix = new int [N] [N];
+    for(int i = 0; i < matrix.length; i++){
+    for(int j = 0 ; j < matrix[i].length;j++){
         
+                System.out.print(matrix[i][j]);
+    }//for j
+            System.out.println("");
+}//for i
+    for(int[] arr : matrix) {
+            System.out.println(Arrays.toString(arr));
+}
+     */
+ /*
+           Random rnd = new Random();
+           for(int i = 0; i < 10;i++){
+               System.out.println(rnd.nextBoolean());
+               System.out.println(1);
+           } else{
+                       System.out.println(0);
+                       }    
+           
+       
+          
+           final int N = 5;
+           int [][] matrix = new int [N][N];
+           
+           Random rnd = new Random();
+           for(int i = 0; i < matrix.length;i++){
+           for(int j = 0; j < matrix[i].length; j++){
+               matrix[i][j] = (rnd.nextBoolean()) ? 1 : 0;
+           }//for j
+           }//for i
+           for(int[] arr:matrix){
+               System.out.println(Arrays.toString(arr));
+           }
+           
+           for(int [] arr : matrix){
+               System.out.println(Arrays.toString(arr));
+           }
+     */
+ /*
+        //Revisar
+        String password = "asdasdasdasdasd";
+        boolean pass_ok = true;
         
+
+        //long 10
+        if(password.length()<10){
+            pass_ok = false;
+        }
+        int counter = 0;
+        for(char c: password.toCharArray()){
+            if (Character.isDigit(c)) {
+                counter++;
+            }
+        }
+        if(counter < 2 || password.matches("^[a-zA-Z0-9]*$") || (password.length()<10 )) {
+            pass_ok = false;
+        }
+
         
-        
-        
-        
-        
-        /* //Calcular digitos de un numero mediante un while
+
+        System.out.println(password.matches("^[a-zA-Z0-9]*$"));
+        if(!password.matches("^[a-zA-Z0-9]*$")) {
+            pass_ok = false;
+        }
+        if(pass_ok) {
+            System.out.println("El password está ok");
+            else {
+                    System.out.println("El passwotd está mal");
+                    }
+        }
+     */
+ /* 
+        //Calcular digitos de un numero mediante un while
         int Numeros = 12345678;
         int Cantidad = 0;
         int div = Numeros;
@@ -25,54 +282,15 @@ public class EjerciciosElementales {
             
         }
         System.out.println(Numeros + " tiene " + Cantidad + " digitos");
-        */
-        
-        
-        
-        
-        /*   //Calcular digitos de un número mediante una String
+     */
+ /*   //Calcular digitos de un número mediante una String
         int Numeros = 12345678;
         String x = Integer.toString(Numeros);
         
         System.out.println(Numeros + " tiene " + x.length() + " digitos");
-        */
-        
-                
-        
-        
-    
-        
-    
-            
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//calcular el area de un triangulo
-            /*
+     */
+    //calcular el area de un triangulo
+    /*
         double area_triangulo = 0;
         double base = 20;
         System.out.println("La base del trinagulo es:" + base);
@@ -82,10 +300,8 @@ public class EjerciciosElementales {
         System.out.println("El area del trinagulo es:" + area_triangulo1);
     }
 }  
-        */
-        
-               
-            /*
+     */
+ /*
             int año=2024;
             if(año%4 !=0){
             System.out.println("El año"+ año + "no es bisiesto");
@@ -104,17 +320,8 @@ public class EjerciciosElementales {
             }
 }
 }            
-           */ 
-
-        
-    
-        
-        
-        
-        
-        
-        
-        /* //valor dinero con intereses en x años
+     */
+ /* //valor dinero con intereses en x años
         int años = 4;
         double interes = 100;
         double dinero = 100;
@@ -127,13 +334,8 @@ public class EjerciciosElementales {
         }
         }
     }
-        */
-        
-        
-        
-        
-        
-        /*
+     */
+ /*
         
          int n = 144234;
     int suma= 0;
@@ -145,9 +347,8 @@ public class EjerciciosElementales {
         System.out.println("La suma es:" + suma);
 } 
     }
-      */
-        
-        /*
+     */
+ /*
         String palabra="arbol"; 
        int contador = 0;
        for(int x=0; x<palabra.length();x++){
@@ -159,17 +360,8 @@ public class EjerciciosElementales {
           System.out.println("La palabra "+ palabra + " contiene " + contador + " vocales");   
     }
 }
-        */
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        /*
+     */
+ /*
         
         String str="abcd";
         String output;
@@ -188,16 +380,8 @@ public class EjerciciosElementales {
    
         
     }
-    */
-    
-    
-    
-    
-    
-    
-    
-    
-    /*
+     */
+ /*
     
     public static void main(String[] args) {
         String str = "aBCd";
@@ -209,17 +393,8 @@ public class EjerciciosElementales {
         
     }
     }
-      */
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        /*
+     */
+ /*
         String letras ="abcdefg";
         System.out.println("El número de letras es:"+ letras.length());
         int i = letras.length();
@@ -230,21 +405,8 @@ public class EjerciciosElementales {
            
     }
 }
-      */  
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        /*
+     */
+ /*
          //calcular media aritmetica
         double [] nums = {5, 10, 12, 18, 8, 3};
         double mean;
@@ -259,28 +421,8 @@ public class EjerciciosElementales {
     }
 }
 }
-    */   
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-        
-        
-        
-        
-        
-        /*
+     */
+ /*
         //ordenar de mayor a menor
     double [] nums = {3.2, 4.5, -7.4, -3.1, 5, 0};
     double min = nums[0];
@@ -300,18 +442,8 @@ public class EjerciciosElementales {
         
     }
 }
-        */
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        /*
+     */
+ /*
         double a = 7;
         double b = -21;
         double min;
@@ -325,40 +457,8 @@ public class EjerciciosElementales {
         System.out.println("el minimo es:" + min);
     }
     }
-*/
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-        
-        
-        
-        
-        
-        /*
+     */
+ /*
         int N = 1551;
     
         int tmp = N;
@@ -376,22 +476,8 @@ public class EjerciciosElementales {
         
     }
 }
-    */
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        /*
+     */
+ /*
         //esta mal
     int N = 31752;
     int tmp = 5;
@@ -404,9 +490,8 @@ public class EjerciciosElementales {
        
     }
 }
-        */
-    
-        /*
+     */
+ /*
         //sacar las 4 cifras de un num de 4 cifras
         //Y si el numero de cifras no lo se?
 
@@ -441,24 +526,8 @@ public class EjerciciosElementales {
 }
 
 }  
-        */
-        
-        
-        
-        
-        
-       
-
-        
-        
-        
-        
-        
-        
-        
-        
-    
-        /*
+     */
+ /*
         //calcular termino N de fibonacci con arrays en vez de x1,x2 y Fib
         int[]Fib = {1,1,0};
         int N = 5;
@@ -472,11 +541,8 @@ public class EjerciciosElementales {
                 }
     }
 }
-        */
-        
-        
-        
-        /*
+     */
+ /*
       //1ºDeclaro array ARR de tamaño 3 de int (x1,x2,Fib)
       //2ºinicializo el array con (x1 = 1,x2 = 1, Fib = 0)
       //3ºhago hago el for-->pero por donde estaba Fib ahora esta ARR[2],donde estaba x1, está ARR[0], etc
@@ -498,16 +564,8 @@ public class EjerciciosElementales {
       }
     }
 }
-    */
-         
-         
-          
-            
-   
-        
-        
-      
-        /*
+     */
+ /*
         
         String[] palabras =("hola","adios"); 
         String[] palabras2 = new String^[23]
@@ -525,16 +583,8 @@ public class EjerciciosElementales {
     }
 }
         
-       */ 
-        
-        
-        
-        
-        
-        
-        
-        
-        /*
+     */
+ /*
         Termina sucesion de fibonacci
         int N =15;
         int x1= 1;
@@ -546,11 +596,8 @@ public class EjerciciosElementales {
             x2 = Fib
             System.out.println(i);
 }
-*/
-        
-  
-
-       /*
+     */
+ /*
     
         int x3= x2 + x1;
         int x4 = x4 + x3;
@@ -570,7 +617,7 @@ public class EjerciciosElementales {
     }
     
         }
-*/
-    }//public static
+     */
+}//public static
 }//public class
-       
+
