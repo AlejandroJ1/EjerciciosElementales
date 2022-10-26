@@ -28,7 +28,59 @@ public class EjerciciosElementales {
     }
 
     public static void main(String[] args) {
-        //Poner 5 edades y alturas decir edad media,altura media, mayores de 18 y mayores de 1,75
+        Scanner sc = new Scanner(System.in);
+        int num = 0;
+        int max = 0;
+        int min = 0;
+        
+        do{
+            System.out.println("Introduce los números");
+            if(num > max){
+                max = num;
+                
+            }else{
+                if(num<min){
+                    min=num;
+                }
+            }
+        }while(num!=0);
+        System.out.println("El numero max es:" + max);
+        System.out.println("El numero min es:" + min);
+        /*//Tabla de multiplicar de x numero
+        Scanner sc = new Scanner(System.in);
+        int n;
+        System.out.println("Introduce un numero");
+        n = sc.nextInt();
+        System.out.println("Tabala de multiplicar de:" + n);
+        for(int i = 0;i<=10;i++){
+            System.out.println(n + " * " + i + " = " + n*i );
+        }
+*/
+        
+        /*//Pedir numeros hasta que se teclee 0, despues suma todos los numeros anteriores
+        Scanner sc = new Scanner(System.in);
+        int num;
+        int suma = 0;
+        do{
+            System.out.println("Dime numeros");
+            num = sc.nextInt();
+            
+            suma += num;
+        }while(num!=0);
+        System.out.println("La suma de todos los números es:" + suma);
+        */    
+        
+        /*Pedir N, mostrar todos los números de 1 a N //revisar
+        Scanner sc = new Scanner(System.in);
+        int n;
+        System.out.print("Introduce un número entero: ");
+        n = sc.nextInt();
+        System.out.println("\nNumeros del 1 al " + n + " : ");                                           
+        for (int i = 1; i <= n; i++) {
+            System.out.println(i);
+        }
+        */
+        /*//Poner 5 edades y alturas decir edad media,altura media, mayores de 18 y mayores de 1,75
         Scanner sc = new Scanner(System.in);
         int edad = 0;
         int suma_edad = 0;
@@ -48,7 +100,7 @@ public class EjerciciosElementales {
         media_altura = suma_altura/5;
         System.out.println("La edad media de los alumnos es:" + media_edad + " y sdu altura media es:" + media_altura);
         
-        
+        */
         
         
         /*//pedir 10 sueldos, la suma de ellos y los superiores a 1000
