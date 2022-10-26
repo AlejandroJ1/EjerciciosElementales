@@ -5,6 +5,7 @@ import java.lang.Math;
 import java.util.Arrays;
 import java.util.regex.*;
 import javax.swing.JOptionPane;
+import java.lang.*;
 
 public class EjerciciosElementales {
   
@@ -27,6 +28,215 @@ public class EjerciciosElementales {
     }
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = 0;
+        int max = 0;
+        int min = 0;
+        
+        do{
+            System.out.println("Introduce los números");
+            if(num > max){
+                max = num;
+                
+            }else{
+                if(num<min){
+                    min=num;
+                }
+            }
+        }while(num!=0);
+        System.out.println("El numero max es:" + max);
+        System.out.println("El numero min es:" + min);
+        /*//Tabla de multiplicar de x numero
+        Scanner sc = new Scanner(System.in);
+        int n;
+        System.out.println("Introduce un numero");
+        n = sc.nextInt();
+        System.out.println("Tabala de multiplicar de:" + n);
+        for(int i = 0;i<=10;i++){
+            System.out.println(n + " * " + i + " = " + n*i );
+        }
+*/
+        
+        /*//Pedir numeros hasta que se teclee 0, despues suma todos los numeros anteriores
+        Scanner sc = new Scanner(System.in);
+        int num;
+        int suma = 0;
+        do{
+            System.out.println("Dime numeros");
+            num = sc.nextInt();
+            
+            suma += num;
+        }while(num!=0);
+        System.out.println("La suma de todos los números es:" + suma);
+        */    
+        
+        /*Pedir N, mostrar todos los números de 1 a N //revisar
+        Scanner sc = new Scanner(System.in);
+        int n;
+        System.out.print("Introduce un número entero: ");
+        n = sc.nextInt();
+        System.out.println("\nNumeros del 1 al " + n + " : ");                                           
+        for (int i = 1; i <= n; i++) {
+            System.out.println(i);
+        }
+        */
+        /*//Poner 5 edades y alturas decir edad media,altura media, mayores de 18 y mayores de 1,75
+        Scanner sc = new Scanner(System.in);
+        int edad = 0;
+        int suma_edad = 0;
+        int media_edad = 0;
+        double altura = 0;
+        double suma_altura = 0;
+        double media_altura = 0;
+        for(int i = 0;i<=5;i++){
+            System.out.println("Introduce la edad del alumno:");
+            edad = sc.nextInt();
+            System.out.println("Introduce la altura del alumno:");
+            altura = sc.nextDouble();
+            suma_edad += edad;
+            suma_altura += altura;
+        }
+        media_edad = suma_edad/5;
+        media_altura = suma_altura/5;
+        System.out.println("La edad media de los alumnos es:" + media_edad + " y sdu altura media es:" + media_altura);
+        
+        */
+        
+        
+        /*//pedir 10 sueldos, la suma de ellos y los superiores a 1000
+        Scanner sc = new Scanner(System.in);
+        int sueldos;
+        int contador_sueldos = 0;
+        int suma = 0;
+        
+
+        for(int i = 0;i<=10;i++){
+            System.out.println("Introduce 10 sueldos'");
+            sueldos = sc.nextInt();
+            suma=suma+sueldos;
+            if(sueldos>=1000){
+                contador_sueldos++;
+            }   
+        }   
+        
+        System.out.println("Suma de los sueldos:" + suma);
+        System.out.println("Son superiores a 100:" + contador_sueldos);
+        */
+        
+         /*//Pedir 10 numeros mostrar la media de los num negativos,postivos y los de 0
+        Scanner sc = new Scanner(System.in);
+        int cnegativos = 0;
+        int cpositivos = 0;
+        int c0 = 0;
+        int positivos = 0;
+        int negativos = 0;
+        double mediapositivos;
+        double medianegativos;
+        for(int n = 0; n<= 10;n++){
+        System.out.println("Dime numeros:");
+        int num = sc.nextInt();
+        if(num>0){
+            positivos+=num;
+            cpositivos++;    
+    }else{
+            if(num<0){
+                cnegativos++;
+            negativos += num;
+                    
+        }else if (num == 0);{
+                
+                c0++;
+                }
+             }
+        }
+            
+        mediapositivos = (double)positivos/cpositivos;
+        medianegativos = (double)negativos/cnegativos;
+            System.out.println("La media de los numeros negativos es:" + medianegativos);
+            System.out.println("La media de los numeros positivos es:" + mediapositivos);
+                    System.out.println(c0);
+       */
+            
+       /* //La factorial de un numero
+        double factorial = 1;
+        double numero = 20;
+        while(numero != 0){
+            factorial = factorial*numero;
+            numero--;
+        }
+        System.out.println(factorial);
+        */
+       
+       
+        /*Introduces un numero y dice si es mayor o menos al que tienes predeterminado
+        int N = 30;
+        int num;
+        boolean acierta = false;
+        Scanner sc = new Scanner(System.in);
+        while(!acierta){
+            num = sc.nextInt();
+            if(num == N){
+                System.out.println("Es igual");
+                boolean falla = true;
+            }
+            if(num < N){
+                System.out.println("Es menor");
+            }
+            else if(num>N){
+                System.out.println("Es mayor");
+            }
+        }
+        */
+        /*minimo maximo de diversos numeros que introduzcas
+        Scanner sc = new Scanner(System.in);
+        int numero = 0;
+        int max = 0;
+
+        int min = 0;
+        do{
+            System.out.println("Introduce los nums");
+            numero = sc.nextInt();
+            if(numero>max){
+                max = numero;
+            }while(numero!=0);
+            System.out.println("El número máximo es:");
+            
+            
+            if(numero>min){
+                min=numero;
+            }while(numero != 0);
+            System.out.println("El número minimo es:");
+        }
+        */
+       
+        /*//Contar del 0 al 100 de 7 en 7 con while
+        int i = 100;
+        while(i > 0){
+            System.out.println("" + i);
+            i-=7;
+        }
+        */
+        /*//Contar del 0 al 100 de 7 en 7 con for
+        for(int i = 100; i > 0; i-=7){
+            System.out.println("" + i);
+        }
+        */
+        
+        
+        /*//revisar
+        int num = 0;
+        Scanner sc = new Scanner(System.in);
+        do
+        {
+            System.out.println("Introduce un numero:");
+            num = sc.nextInt();//2
+            
+        }while(num != 0);
+        System.out.println("Los numeros son:" + (isPar(4));
+    */
+    
+        
+        
       
         
         /* //Decir si un numero es par o impar con un metodo
@@ -54,7 +264,7 @@ public class EjerciciosElementales {
         }
         */
         
-        /*//factorizar un numero
+      /*  //factorizar un numero
 
         Scanner miScanner = new Scanner(System.in);
        int numero;
@@ -71,15 +281,15 @@ public class EjerciciosElementales {
             divisor++;
         }
         }
-    */
-    
+    */    
        
         /*//Dime el número del medio del número que te doy
-        String str = "12345";
+        String str = "123";
         System.out.println("Nº digitos " + str.length());
         int l= str.length();
         int i = l/2;
         System.out.println("El número del medio es: " + str.charAt(i));
+        String str = "123";
 
         */
 
