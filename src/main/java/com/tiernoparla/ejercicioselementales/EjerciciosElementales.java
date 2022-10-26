@@ -28,6 +28,8 @@ public class EjerciciosElementales {
     }
 
     public static void main(String[] args) {
+        /*//Maximo y minimo de una serie de numeros//mal
+       
         Scanner sc = new Scanner(System.in);
         int num = 0;
         int max = 0;
@@ -46,6 +48,9 @@ public class EjerciciosElementales {
         }while(num!=0);
         System.out.println("El numero max es:" + max);
         System.out.println("El numero min es:" + min);
+        
+        */
+        
         /*//Tabla de multiplicar de x numero
         Scanner sc = new Scanner(System.in);
         int n;
@@ -187,7 +192,7 @@ public class EjerciciosElementales {
             }
         }
         */
-        /*minimo maximo de diversos numeros que introduzcas
+        /*//minimo maximo de diversos numeros que introduzcas
         Scanner sc = new Scanner(System.in);
         int numero = 0;
         int max = 0;
